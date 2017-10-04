@@ -99,3 +99,5 @@ ENV/
 
 # mypy
 .mypy_cache/
+wordnet_edit_distance - Copy.py
+A2.zip

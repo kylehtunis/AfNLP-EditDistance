@@ -1,0 +1,13 @@
+random_substitution.py
+
+When a sentence is replaced by synonyms, the sentence often retains most of it's meaning (loses some grammar, but otherwise stays intact). The same is often, but no always true of hyponyms. However, using hypernyms generally completely ruins the meaning of the sentence and renders it more or less impossible to understand.
+
+wordnet_edit_distance.py
+
+This seems like a better approach than Levenstein distance. It takes into account that two very similar words, such as 'hands' and 'knees' when using 1974 and 1979 as input, can be substituted more easily and should be prefered during substitution
+With the regards to which approach (path vs wup) should be used, it seems to me that both provide similar results. However, wup tended to result in lower distances. This is not necessarily better, though
+One possible limitation is that two words could be homonyms, and therefore require no substitution to maintain sentence meaning and structure, but since we are using tagged words this will require a cost to substitute
+
+wordnet_edit_distance2.py
+
+not using tagging resulted in slightly larger edit distances, however the difference was not significant
